@@ -1,0 +1,6 @@
+f:\users\yovel\onedrive\מסמכים\visual studio 2015\Projects\SnakeCompleteProject\SnakeCompleteProject\bin\Debug\SnakeCompleteProject.exe.config
+f:\users\yovel\onedrive\מסמכים\visual studio 2015\Projects\SnakeCompleteProject\SnakeCompleteProject\obj\Debug\SnakeCompleteProject.csprojResolveAssemblyReference.cache
+f:\users\yovel\onedrive\מסמכים\visual studio 2015\Projects\SnakeCompleteProject\SnakeCompleteProject\bin\Debug\SnakeCompleteProject.exe
+f:\users\yovel\onedrive\מסמכים\visual studio 2015\Projects\SnakeCompleteProject\SnakeCompleteProject\bin\Debug\SnakeCompleteProject.pdb
+f:\users\yovel\onedrive\מסמכים\visual studio 2015\Projects\SnakeCompleteProject\SnakeCompleteProject\obj\Debug\SnakeCompleteProject.exe
+f:\users\yovel\onedrive\מסמכים\visual studio 2015\Projects\SnakeCompleteProject\SnakeCompleteProject\obj\Debug\SnakeCompleteProject.pdb
