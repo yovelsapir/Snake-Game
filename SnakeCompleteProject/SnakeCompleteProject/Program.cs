@@ -22,7 +22,7 @@ namespace SnakeCompleteProject
 
                 Controller.StartGame();
                 Controller.GameBounds();
-                Controller.SetGameSpeed(50);
+                Controller.SetGameSpeed(100);
 
                 Console.CursorVisible = false;
 

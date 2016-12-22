@@ -16,15 +16,15 @@ namespace SnakeCompleteProject
         private static bool GameStart = false;
 
         // Map Size
-        private const int xSize = 40;
-        private const int ySize = 15;
+        private const int xSize = 20;
+        private const int ySize = 10;
 
         //Start Position
-        private const int xStart = 10;
-        private const int yStart = 10;
+        private const int xStart = 5;
+        private const int yStart = 5;
 
         //Food Start Spawn
-        private static int[] RespawnX = new int[] { 5, 13, 1, 7, 10 };
+        private static int[] RespawnX = new int[] { 5, 5, 1, 2, 2 };
         private static int[] RespawnY = new int[] { 9, 9, 2, 5, 5 };
 
         //Game Map Array
@@ -40,7 +40,7 @@ namespace SnakeCompleteProject
         public static int snakeLentgh = 1;
 
         //Game Speed (Threat.Sleep)
-        public static int gameSpeed = 50;
+        public static int gameSpeed = 150;
 
         //Wall Char
         private const char WALL = '*';
@@ -97,17 +97,13 @@ namespace SnakeCompleteProject
                 for (int j = 0; j < xSize; j++)
                 {
                     gameArray[i, 0] = WALL;
-                    gameArray[i, xSize-1] = WALL;
-                }
-
-                for (int j = 0; j < xSize; j++)
-                {
+                    gameArray[i, xSize - 1] = WALL;
                     gameArray[0, j] = WALL;
-                    gameArray[ySize-1, j] = WALL;
+                    gameArray[ySize - 1, j] = WALL;
                 }
             }
         }
-        
+
         public static void SnakeMove(ref ConsoleKey command)
         {
             ixPoition[limitCount] = xPos;
@@ -146,6 +142,7 @@ namespace SnakeCompleteProject
             {
                 GameStart = false;
                 limitCount = 0;
+                return;
             }
             else if (gameArray[yPos, xPos] == Food)
             {
@@ -204,7 +201,7 @@ namespace SnakeCompleteProject
             Random rand = new Random();
             bool flag = false;
             int X = 0, Y = 0;
-            do
+            while(!flag)
             {
                 X = rand.Next(xSize-2)+1;
                 Y = rand.Next(ySize-2)+1;
@@ -215,7 +212,6 @@ namespace SnakeCompleteProject
                 gameArray[Y, X] = Food;
                 flag = true;
             }
-            while (!flag);
         }
 
         public static bool OutOfRange()
